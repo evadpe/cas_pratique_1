@@ -17,7 +17,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="CNN vs ViT — GTSRB",
+    page_title="CNN vs ViT — Panneaux de signalisation",
     page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded",
@@ -351,7 +351,7 @@ with st.sidebar:
         label_visibility="collapsed",
     )
     st.markdown("<hr>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size:0.72rem;color:#484f58;'>GTSRB · 43 classes · 32×32</p>",
+    st.markdown("<p style='font-size:0.72rem;color:#484f58;'>Panneaux de signalisation · 43 classes · 32×32</p>",
                 unsafe_allow_html=True)
 
 label_names = load_label_names()
@@ -362,7 +362,7 @@ if page == "Vue d'ensemble":
     st.title("CNN vs Vision Transformer")
     st.markdown(
         "<p style='color:#8b949e;margin-top:-0.5rem;margin-bottom:1.5rem;'>"
-        "GTSRB &mdash; 43 classes &middot; images 32&times;32 &middot; "
+        "Panneaux de signalisation &mdash; 43 classes &middot; images 32&times;32 &middot; "
         "86 989 train &middot; 4 410 val &middot; 12 630 test</p>",
         unsafe_allow_html=True,
     )
